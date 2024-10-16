@@ -1,0 +1,200 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage[dvipsnames]{xcolor}
+\usepackage{fontawesome5}
+\input{glyphtounicode}
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+  \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+    \textbf{#1} & #2 \\
+    \textit{\small#3} & \textit{\small #4} \\
+  \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+  \item
+  \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+    \textit{\small#1} & \textit{\small #2} \\
+  \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+  \item
+  \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+    \small#1 & #2 \\
+  \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+\begin{center}
+  \textbf{\Huge \scshape Alexandre de Pape} \\ \vspace{1pt}
+  \href{mailto:alexandredepape@gmail.com}{\underline{alexandredepape@gmail.com}}
+  $|$
+  \textbf{FR/EN}
+  $|$
+  \href{https://www.linkedin.com/in/alexandre-de-pape-6869541b1/}{\underline{Linkedin}} $|$
+  \href{https://alexandredepape.github.io/}{\underline{Github}}
+\end{center}
+
+\centering
+\textbf{FULL STACK DEVELOPER}
+
+\section{Technical Skills}
+\begin{itemize}[leftmargin=0.15in, label={}]
+  \small{\item{
+    \textbf{Technologies: }{Typescript, JavaScript, React, Node js, Tailwind, Vite, Esbuild, Zustand, Webpack, PrismaORM, Java, Python, Ruby, Go, MongoDB, PostgresSQL, Nest.js, Springboot, Git, Docker, Fly.io, Supabase, PyCharm, Chrome Extension, OpenCV, Tensorflow, Moviepy, SQLAlchemy, Nextjs, TanstackQuery, Hasura, GraphQL, Redis, BullMQ}
+  }}
+\end{itemize}
+
+\def\linkColor{Mulberry}
+
+\section{Experience}
+\resumeSubHeadingListStart
+    \resumeSubheading
+      {Founder \& CTO}{}
+      {FluentAI $|$ \textbf{\href{https://fluentai.pro}{https://fluentai.pro}}}{Jan 2023 - now}
+      \resumeItemListStart
+        \resumeItem{Built Rest API with Nest.js and Typescript with PrismaORM deployed on Fly.io and wrote unit tests with Jest.}
+        \resumeItem{Built Frontend interface with React and Typescript, TanstackQuery, Zod, and state manager \href{https://github.com/pmndrs/zustand}{\color{\linkColor}Zustand.}}
+        \resumeItem{Reversed Engineered Streaming service's Javascript to extract subtitles data.}
+        \resumeItem{Implemented the devops \href{https://fly.io/}{\color{\linkColor}Fly.io} and \href{https://supabase.com/}{\color{\linkColor}Supabase.com} and CI/CD with Github Actions.}
+        \resumeItem{\textbf{Leveraged knowledge in Typescript, React, Prisma, CI/CD, Reverse engineering, Chrome Extensions, Zustand, Nest.js, PrismaORM, Tailwind, Esbuild, PostgreSQL, Redis, BullMQ}}
+      \resumeItemListEnd
+    \resumeSubheading
+    {Full Stack Software Developer}{Brussels, Belgium}
+    {Embie $|$ \textbf{\href{https://www.embie.com/}{www.embie.com}}}{Sep 2023 - June 2024}
+    \resumeItemListStart
+      \resumeItem{Developed full-stack application using React, Next.js with TypeScript.}
+      \resumeItem{Utilized GraphQL for efficient and powerful data manipulation and interaction within the database.}
+      \resumeItem{Wrote database migration scripts with Hasura to ensure smooth and efficient changes in the database schema.}
+      \resumeItem{Wrote end-to-end tests using Playwright to ensure the reliability and stability of the application.}
+      \resumeItem{Used TanstackQuery for data fetching, state management, and caching, improving efficiency and speed.}
+      \resumeItem{\textbf{Leveraged knowledge in TypeScript, Next.js, Hasura, GraphQL, and Playwright, Tailwind}}
+    \resumeItemListEnd
+    \resumeSubheading
+      {Full Stack Software Developer}{Grand-Rosière-Hôtômont, Belgium}
+      {Odoo $|$ \textbf{\href{https://www.odoo.com/}{www.odoo.com}}}{Jan 2022 - Jan. 2023}
+      \resumeItemListStart
+        \resumeItem{Built and refined web application interfaces with OWL, an in-house JavaScript framework inspired by modern frameworks, enhancing user experience and interaction.}
+        \resumeItem{Wrote and optimized integration tests to ensure the reliability and robustness of application flows.}
+        \resumeItem{\textbf{Leveraged deep expertise in Python, JavaScript, OWL, REST APIs, XML, ORMs, Git, GitHub, Continuous Integration, and testing methodologies.}}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Full Stack Software Developer Intern}{Brussels, Belgium}
+      {Apptweak $|$ \textbf{\href{https://www.apptweak.com/}{www.apptweak.com}}}{Jan. 2020 - June. 2020}
+      \resumeItemListStart
+        \resumeItem{Designed Ruby web workers to collect data from Facebook and building optimised data mining scripts.}
+        \resumeItem{Reduced drastically the number of requests by integrating Caching mechanisms with Redis.}
+        \resumeItem{Created Proxy Pools algorithms to prevent from being IP banned.}
+        \resumeItem{\textbf{Leveraged Knowledge in Git, Ruby, Devops}}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+\section{Projects:}
+\resumeSubHeadingListStart
+  \resumeProjectHeading
+    {\textbf{\href{https://www.youtube.com/channel/UCz2zp337iZ9xkpLDACxpRHA}{\color{\linkColor}League Of Legends Youtube Bot} \textcolor{red}{\faIcon{youtube}}} $|$ \emph{Python, Heroku, Bash Scripting, Moviepy, Pillow, Selenium}}{}
+    \resumeItemListStart
+      \resumeItem{Designed architecture to automate the creation and uploading of League of Legends clips on Youtube.}
+      \resumeItem{Integrated a queue/consumer system through a independent worker deployed on Heroku connected to MongoDB.}
+      \resumeItem{Reversed Engineered websites mechanisms to utilize their API (\href{https://github.com/alexandredepape/nomad/blob/master/src/recording/programs_manager/lol.py\#L32}{\color{\linkColor}Github Code}).}
+      \resumeItem{\textbf{Leveraged Knowledge in Tasks Automation, Video/Image Editing, Unit Testing.}}
+    \resumeItemListEnd
+\resumeSubHeadingListEnd
+
+\section{Education}
+\resumeSubHeadingListStart
+  \resumeSubheading
+    {Bachelor in Computer Science}{Brussels, Belgium}
+    {Catholic University of Louvain (IPL): Algorithms, OOP, Complexity, Data Structures, Databases}{2017 - 2021}
+  \resumeSubheading
+    {Data Science Bootcamp}{Tel Aviv, Israel}
+    {Israel Tech Challenge (ITC): Machine Learning, Deep Learning, Computer Vision, NLP}{2020 -- 2021}
+\resumeSubHeadingListEnd
+
+\end{document}
